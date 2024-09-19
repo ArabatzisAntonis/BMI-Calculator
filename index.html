@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI CALC</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="bmiscript.js" defer></script>
 </head>
 <body>
 
     <div class="WindowMiddle">
-        <label for="txtfldHeight">Γραψε το υψος σου σε cm:</label>
-        <input type="text" id="txtfldHeight" name="txtfldHeight">
+        <label for="txtfldHeight">Your Height in cm:</label>
+        <input type="number" id="txtfldHeight" name="txtfldHeight" step="0.01" min="0">
         
 
-        <label for="txtfldWeight">Γραψε το βαρος σου :</label>
-        <input type="text" id="txtfldWeight" name="txtfldWeight">
-        <button type="button" >ΜΕΤΡΗΣΗ</button>
+        <label for="txtfldWeight">Your Weight :</label>
+        <input type="number" id="txtfldWeight" name="txtfldWeight" step="0.01" min="0">
+
+        <button type="button" onClick="calculateBMI()">CALCULATE</button>
     </div>
 
 </body>
