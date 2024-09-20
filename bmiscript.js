@@ -28,13 +28,13 @@ resultBmi = Math.round(resultBmi * 10) / 10;
 //console.log('BMI:', result);
         
 if (resultBmi < 18.5) {
-    alert ("Underweight");
+    alert ("Underweight: Your BMI is"+ " "+resultBmi);
 } else if (resultBmi >= 18.5 && resultBmi < 24.9) {
-    alert ("Normal weight");
+    alert ("Normal weight: Your BMI is"+ " "+resultBmi);
 } else if (resultBmi >= 25 && resultBmi < 29.9) {
-    alert ("Overweight");
+    alert ("Overweight: Your BMI is"+ " "+resultBmi);
 } else if (resultBmi >= 30) {
-    alert ("Obesity");
+    alert ("Obesity: Your BMI is"+ " "+resultBmi);
 }
     
         
